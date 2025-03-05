@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pass = "hello";
+        let str1 = prompt("Mời bạn nhập vào pass: ");
+        let lower = str1.toLowerCase();
+        let compare = pass.localeCompare(str1);
+        if (compare != 0) {
+            alert("Không đúng mk");
+        } else {
+            alert("đúng mk");
+        }
+    </script>
+</body>
+
+</html>

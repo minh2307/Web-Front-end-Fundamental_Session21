@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = [];
+        let odd = 0;
+        let even = 0;
+        alert("mời bạn nhập 5 số nguyên bất kỳ: ");
+        for (let i = 0; i < 5; i++) {
+            num[i] = +prompt(`số thứ ${i + 1}`);
+            if (num[i] % 2 !== 0) {
+                odd++;
+            } else {
+                even++;
+            }
+        }
+        alert(`số lượng lẻ là : ${odd}`);
+        alert(`số lượng lẻ là : ${even}`);
+    </script>
+</body>
+
+</html>

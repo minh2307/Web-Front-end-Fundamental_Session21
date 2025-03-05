@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt("Mời bạn nhập số nguyên(có 3 chữ số): ");
+        let sum = 0, power = 0;
+        if (num < 100 || num > 999) {
+            console.log("Vui lòng nhập số có đúng 3 chữ số!");
+        } else {
+            let numStr = num.toString();
+            for (let i = 0; i < 3; i++) {
+                power = Number(numStr.charAt(i)) ** 3;
+                sum += power;
+            }
+            if (sum === num) {
+                console.log(`${num} là số Armstrong`);
+            } else {
+                console.log(`${num} không phải là số Armstrong`);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("Mời bạn nhập số lần lượt giá trị a,b,c(ax^2+bx+c=0): ");
+        let a = +prompt("a");
+        let b = +prompt("b");
+        let c = +prompt("c");
+        let x, x1, x2;
+        let denta = b * b - 4 * a * c;
+        if (denta < 0) {
+            console.log('Phương trình vô nghiệm');
+        } else if (denta === 0) {
+            x = -b / (2 * a);
+            console.log(`phương trình có nghiệm khép x1=x2= ${x}`);
+        } else {
+            x1 = (-b + Math.sqrt(denta)) / (2 * a);
+            x2 = (-b - Math.sqrt(denta)) / (2 * a);
+            console.log(`phương trình có 2 nghiệm phân biệt x1 = ${x1}, x2 = ${x2}`);
+        }
+    </script>
+</body>
+
+</html>

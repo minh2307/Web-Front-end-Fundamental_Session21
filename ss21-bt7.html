@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = +prompt('mời bạn nhập vào số tiền gửi nhân hàng: ');
+        let month = +prompt('mời bạn nhập vào tháng muốn gửi: ');
+        let interest;
+        let receive;
+        interest = money * (1 / 100) * month;
+        document.write(`tiền lãi: ${interest} <br>`);
+        receive = money + interest;
+        document.write(`tiền nhận được: ${receive}`);
+
+    </script>
+</body>
+
+</html>
