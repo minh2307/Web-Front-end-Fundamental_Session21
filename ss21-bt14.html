@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let width = +prompt('Mời bạn nhập vào chiều rộng: ');
+        let height = +prompt('Mời bạn nhập vào chiều cao: ');
+        document.write("<pre>");
+        for (let i = 0; i < height; i++) {
+            let a = "";
+            for (let j = 0; j < width; j++) {
+                if (i === 0 || i === height - 1 || j === 0 || j === width - 1) {
+                    a += " * ";
+                }
+                else {
+                    a += "   ";
+                }
+            }
+            document.write(a + "<br>");
+        }
+        document.write("</pre>");
+    </script>
+</body>
+
+</html>
